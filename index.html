@@ -1,10 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Doc</title>
+    <title>Trivia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
 </head>
+
 <body>
-    <button>1</button>
-    
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Trivia</a>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <br>
+            <div class="card">
+                <div class="card-header">
+                    <strong>
+                        <i class="fa fa-list-alt"></i> Search Parameters</strong>
+                </div>
+                <div class="card-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="search">Category</label>
+                            <input type="text" class="form-control" id="search-term">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Number of questions</label>
+                            <select id="article-count" class="custom-select" aria-labelledby="dropdownMenuButton">
+                                <option selected value="1">1</option>
+                                <option value="5" selected>5</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="start-year"></label>
+                            <input type="text" class="form-control" id="start-year">
+                        </div>
+                        <div class="form-group">
+                            <label for="end-year"></label>
+                            <input type="text" class="form-control" id="end-year">
+                        </div>
+                        <button type="submit" class="btn btn-default" id="run-search">
+                            <i class="fa fa-search"></i> Search</button>
+                        <button class="btn btn-default" id="clear-all">
+                            <i class="fa fa-trash"></i> Create </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
 </body>
+
 </html>
