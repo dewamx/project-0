@@ -1,0 +1,12 @@
+.container{
+    font-family:'Fjalla One', sans-serif;
+}
+
+.card-header{
+    text-align: center;
+    font-size: 25px;
+}
+
+.row{
+    padding: 100px;
+}
