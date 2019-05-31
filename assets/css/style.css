@@ -1,0 +1,36 @@
+body {
+    background-color: blue;
+    font-size: 60%;
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    max-width: 80%;
+    text-align: center;
+}
+.flex-center {
+    text-align: center;
+}
+.flex-column {
+    text-align: center;
+}
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid;
+    color: aqua;
+    background-color: aliceblue;
+}
