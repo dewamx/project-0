@@ -10,3 +10,7 @@
 .row{
     padding: 100px;
 }
+
+.btn:hover{
+    background: linear-gradient(#45b8e6, rgb(35, 162, 212), #1695c7, #0d79a3);
+}
