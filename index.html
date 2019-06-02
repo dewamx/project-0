@@ -1,58 +1,47 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Trivia Game</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="assets/js/javascript.js"></script>
+   <title>Trivia Game</title>
+   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <script src="assets/js/javascript.js" ></script>
 </head>
-
 <body background="assets/images/modern-abstract-background.jpg">
-    <div class="container">
-        <div class="col-md-12 text-center">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <h1>Trivia Game</h1>
-                <form class="form-inline">
-                        <input id="searchBox" class="nav-link dropdown-toggle" class="form-control mr-sm-2" type="search" placeholder="Look up Quizzes" aria-label="Search">
-                </form>
+  <div class="container">
+    <div class="jumbotron" style="background-color: #3e5b53; color:white">
+      <h1>Trivia Game</h1>
         <div id="header">
-            <a href="./index.html"><div class="home">Home</div></a>
+          <a href="./index.html" style="color: white"><div class="home">Home</div></a>
         </div>
-            </nav>
-</div>
-<div class="container">
-    <div class="card-body">
-        <form role="form">
-            <div class="form-group">
-                <label for="search"><h3>Category</h3></label>
-                    <select class="custom-select" aria-labelledby="dropdownMenuButton"></select>
-            </div>
-        <div id="quizList"></div>
     </div>
-
-  <div id="startArea" class="text-center">
-    <div id="quizInfo">
+    <div class="card">
+      <div class="card-body">
+        <h2>Category</h2>
+        <br>
+          <div id="quizList">
+          </div>
+      </div>
+    <div id="startArea" class="text-center">
+      <div id="quizInfo">
+      </div>
+      <button class="btn btn-default" id="startQuizBtn">Start Quiz</button>
     </div>
-    <button class="btn btn-default" id="startQuizBtn">Start Quiz</button>
-  </div>
-  <div id="quizArea" class="text-center">
-    <h2 id="question"></h2>
-    <ul id="answerList">
-    </ul>
-    <button class="btn btn-default"  id="nextBtn">Submit</button>
-  </div>
-
-  <div id="resultArea">
-    <div id="result">
+    <div id="quizArea" class="text-center">
+      <h2 id="question"></h2>
+        <ul id="answerList">
+        </ul>
+      <button class="btn btn-default"  id="nextBtn">Submit</button>
     </div>
-    <button class="btn btn-default" id="anotherBtn">Pick another quiz</button>
+    <div id="resultArea">
+      <div id="result">
+      </div>
+      <br><br>
+        <button class="btn btn-default" id="anotherBtn"><a href="./index.html">Pick another quiz</a></button>
+    </div>
   </div>
-</div>
-
-
+  </div>
 </body>
-
 </html>
