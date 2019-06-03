@@ -8,29 +8,18 @@ $(document).ready(function () {
           return response.json();
       })
 
-      .then(function (data) { // Create list of quiz categories in select area
-          var quizList = data.trivia_categories;
-          console.log(quizList)
-          var form = $('<form>');
-          var select = $('<select>')
-
-          quizList.forEach(function (quiz) {
-              var quizDiv = document.createElement("div");
-              var quizName = document.createElement("h3");
-              var name = document.createTextNode(quiz.name);
-              quizName.appendChild(name);
-              quizDiv.appendChild(quizName);
-              quizDiv.id = quiz.id;
-              quizDiv.classList.add("quiz");
-              document.getElementById("quizList").appendChild(quizDiv);
-              var option = $('<option>' + quiz.name + '</option>')
-              option.attr("id", quiz.id)
-              console.log(option)
-              select.append(option);
-              form.append(select);
-              $('.card-body').append(form)
-
-          });
+      .then(function(data) { // Create list of quiz categories in select area
+        var quizList = data.trivia_categories;
+        quizList.forEach(function(quiz) {
+          var quizDiv = document.createElement("div");
+          var quizName = document.createElement("h3");
+          var name = document.createTextNode(quiz.name);
+          quizName.appendChild(name);
+          quizDiv.appendChild(quizName);
+          quizDiv.id = quiz.id;
+          quizDiv.classList.add("quiz");
+          document.getElementById("quizList").appendChild(quizDiv);
+        });
           // select.append(option);
           // form.append(select);
           // $('.card-body').append(form)
