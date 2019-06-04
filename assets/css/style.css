@@ -1,36 +1,62 @@
-body {
-    background-color: blue;
-    font-size: 60%;
+
+.jumbotron{
     text-align: center;
-}
-*{
-    box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0px;
-    padding: 0px;
-    color: black;
-}
+  }
 .container{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: flex;
-    align-items: center;
-    max-width: 80%;
+    font-family: 'Vidaloka', serif;
+ }
+ .card-header{
     text-align: center;
-}
-.flex-center {
-    text-align: center;
-}
-.flex-column {
-    text-align: center;
-}
-.btn {
-    font-size: 1.8rem;
-    padding: 1rem 0;
-    width: 20rem;
-    text-align: center;
-    border: 0.1rem solid;
-    color: aqua;
-    background-color: aliceblue;
-}
+    font-size: 25px;
+ }
+ .h2{
+   text-align: center;
+ }
+ 
+ .row{
+    padding: 100px;
+ }
+ 
+ .btn:hover{
+    color: #415657;
+    background: #fdc323;
+ }
+ 
+ .quiz:hover, .answer:hover {
+    background-color: lightblue;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .answer:hover{
+    /*border:1px solid #fff;*/
+    transition: 1s;
+  }
+  
+  .answer:active{
+    border:1px solid #fff;
+    transition: 1s;
+  }
+
+  .selectedAnswer {
+    background-color: lightblue;
+  }
+  
+  .correctAnswer {
+    background-color: lightgreen;
+  }
+  
+  .incorrectAnswer {
+    background-color: red;
+  }
+
+  h2{
+      text-align: center;
+  }
+
+@media (min-width: 320px) and (max-width: 480px){}
+@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 1024px){}
+@media (min-width: 768px) and (max-width: 1024px){}
+@media (min-width: 1025px) and (max-width: 1280px){}
+@media (min-width: 1281px){}
