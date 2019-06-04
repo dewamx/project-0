@@ -1,19 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
     <title>Trivia</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 
-<body>
+
+    <title>Trivia</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+    <link rel="stylesheet" type="text/js" href="assets/js/javascript.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+   </head>
+
+<body background="assets/images/modern-abstract-background.jpg">
     <div class="container">
-        <div id="home" class="flex-center flex-column">
-            <h1>Quiz</h1>
-            <a class="btn" href="game.html">Play</a>
+        <div class="col-md-12 text-center"
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Trivia Game</a>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <br>
+            <div class="card">
+                <div class="card-header">
+                    <strong>
+                        <i class="fa fa-list-alt"></i> Search Parameters</strong>
+                </div>
+                <div class="card-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="search">Category</label>
+                            <select class="custom-select" aria-labelledby="dropdownMenuButton"></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Number of questions</label>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="difficulty">Level of difficulty</label>
+                            <select class="custom-select" aria-labelledby="dropdownMenuButton"></select>
+                        </div>
+                        <button type="submit" class="btn btn-default" id="run-search">
+                            <i class="fa fa-search"></i> Search</button>
+                        <button class="btn btn-default" id="clear-all">
+                            <i class="fa fa-trash"></i> Create </button>
+                    </form>
+                </div>
+            </div>
         </div>
-  </div>
+    </div>
+    </div>
+
+
     <script src="https://code.jquery.com/jquery.js"></script>
 </body>
 
