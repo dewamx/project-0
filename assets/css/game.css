@@ -1,0 +1,15 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    background-color: aliceblue;
+}
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: aqua;
+    color: whitesmoke;
+}
+.choice-text {
+    padding: 1.5rem;
+}
